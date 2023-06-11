@@ -1,3 +1,3 @@
-The main.py Python file scans through the tickers.xlsx file, checking for each ticker's existence using the yfinance library. If the ticker is located, the output is tagged as True; if not, it is marked as False. Alongside this, when a ticker is found (i.e., True), the corresponding last closing price is also appended to the output.
+The main.py file processes each ticker listed in the tickers.xlsx file, using the yfinance library to confirm its presence. If a given ticker is successfully located, the program labels its status as True and fetches its most recent closing price, both of which are then appended to the output. However, if the ticker cannot be located or an error occurs during the process, its status is labeled as False and no closing price is appended for that ticker. All of these results are then stored in a new CSV file called 'tickers_with_yahoo.csv'.
 
 Original ticker list compiled by FML-Research https://github.com/FML-Research/us_stock_tickers
